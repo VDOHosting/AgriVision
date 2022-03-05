@@ -10,8 +10,10 @@
     background: #ffffff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #fdf97e, #05ac02); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #fdf97e, #05ac02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: fit-content;
+    width: 25vw;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -27,7 +29,16 @@ body {
 }
 
 .blocktext {
-    width: fit-content;
+    width: max-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+.border {
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin: 0px;
+    width: 100%;
+    margin-top: 10px;
 }
