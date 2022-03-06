@@ -42,3 +42,17 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
+.border:hover {
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration-color: #05ac02;
+    color: #252525;
+}
