@@ -12,8 +12,6 @@
     background: linear-gradient(to bottom, #fdf97e, #05ac02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: fit-content;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 body {
@@ -29,30 +27,21 @@ body {
 }
 
 .blocktext {
-    width: max-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
-.border {
-    border-radius: 10px;
-    border-color: black;
-    border-style: solid;
+.zoom {
     margin: 0px;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.border:hover {
-    border-radius: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration-color: #05ac02;
-    color: #252525;
+    border-radius: 10px;
+    padding: 0px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    line-height: 10px;
+    font-size: 15px;
 }
