@@ -10,7 +10,8 @@
     background: #ffffff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #fdf97e, #05ac02); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #fdf97e, #05ac02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: fit-content;
+    min-height: fit-content;
+    max-width: 80%;
     border-radius: 10px;
 }
 
@@ -33,7 +34,7 @@ body {
 }
 
 .zoom {
-    margin: 0px;
+    margin: 10px 0px;
     border-radius: 10px;
     padding: 0px;
     border-style: solid;
@@ -44,6 +45,8 @@ body {
     justify-items: center;
     line-height: 10px;
     font-size: 15px;
+    align-self: center;
+    justify-self: center;
 }
 
 .gradientlg {
@@ -58,21 +61,60 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
-    .blocktext {
-        width: 80%;
-    }
-    .border {
-        width: 80%;
-    }
-    .wrapper {
-        width: inherit;
-    }
-    .gradient {
-        max-width: 80%;
-        width: 80%;
-    }
-    .gradientlg{
-        max-width: 80%;
-      }
-    }
-    
+.blocktext {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border {
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin: 0px;
+    margin-top: 10px;
+}
+.wrapper {
+    width: inherit;
+    align-self: center;
+    justify-self: center;
+    margin: 20px;
+}
+.gradient {
+    max-width: 80%;
+    min-width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+.gradientlg{
+    max-width: 80%;
+  }
+}
+
+
+.border {
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin: 0px;
+    width: inherit;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.border:hover {
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration-color: #05ac02;
+    color: #252525;
+}
